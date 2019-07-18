@@ -4,8 +4,16 @@ function header() {
   return (
     <div className='header'>
       <div className='mainNav'>
+      <ul className='mobileSecondaryNav'>
+            <li className='shop'>
+                <img className='storeImage' src={require(`../images/store.gif`)} alt='shop hamburger icon'/>
+            </li>
+            <li className='search'>
+                <img className='searchImage' src={require(`../images/search.gif`)} alt='account icon'/>
+            </li>
+        </ul>
         <p className='brandLogoContainer'>
-            <img className='brandLogo' src={require(`../images/logo.png`)} alt='brand logo'/>
+            <a href='/'><img className='brandLogo' src={require(`../images/logo.png`)} alt='brand logo'/></a>
         </p>
         <ul className='secondaryNav'>
             <li className='account'>

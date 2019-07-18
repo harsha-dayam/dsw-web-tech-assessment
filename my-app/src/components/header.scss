@@ -3,7 +3,6 @@
     -moz-box-shadow: 0px 6px 5px 0px rgba(163,160,163,0.66);
     box-shadow: 0px 6px 5px 0px rgba(163,160,163,0.66);
 
-
     .mainNav {
         display: flex;
         justify-content: space-between;
@@ -17,10 +16,16 @@
             .brandLogo {
                 width: 130px;
                 height: 50px;
+
+                @include mobile {    
+                    width: 110px;
+                    height: 50px;
+                }
             }
         }
 
-        .secondaryNav {
+        .secondaryNav,
+        .mobileSecondaryNav {
             display: inline-block;
             vertical-align: top;
 
@@ -30,7 +35,31 @@
                 img {
                     width: 70px;
                     height: 70px;
+
+                    // PNGs provided are hard to rescale. SVGs would be easier
+                    // to integrate on mobile.
+                    @include mobile {    
+                        width: 60px;
+                        height: 60px;
+                    }
                 }                
+            }
+        }
+
+        .secondaryNav {
+            .search, 
+            .store {
+                @include mobile {    
+                    display: none;
+                }
+            }
+        }
+
+        .mobileSecondaryNav {
+            display: none;
+
+            @include mobile {    
+                display: inline-block;                
             }
         }
     }
@@ -47,6 +76,10 @@
                 text-transform: uppercase;
                 font-size: 12px;
             }
+        }
+
+        @include mobile {    
+            display: none;                
         }
     }
 }
