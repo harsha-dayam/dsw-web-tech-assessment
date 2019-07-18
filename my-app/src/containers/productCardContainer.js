@@ -1,10 +1,18 @@
 import React from 'react';
-import '../App.css';
-import ProductCard from '../components/productCard.js'
+import '../App.scss';
+import ProductCard from '../components/productCard'
+import { products } from '../products';
 
 function productCardContainer() {
   return (
-    <ProductCard />
+    <div className='productCardContainer'>
+        {products.map((product, index) => {        
+          return <ProductCard
+            key={index} 
+            product={product}
+          />
+        })}        
+    </div>    
   );
 }
 
