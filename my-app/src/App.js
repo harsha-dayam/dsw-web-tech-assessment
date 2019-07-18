@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import ProductCardContainer from './containers/productCardContainer';
 
 function App() {
