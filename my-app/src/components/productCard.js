@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.scss';
 
 function productCard({ product:{ id, brand, name, price, compValue, rating, activeColor, colors } }) {
   const starWidth = ( rating / 5 ) * 100,
@@ -34,7 +33,8 @@ function productCard({ product:{ id, brand, name, price, compValue, rating, acti
             <span className='ratingStarsEmpty'>★★★★★</span>
             <span className='ratingStarsFill' style={ratingStarsEmpty}>★★★★★</span>
           </p> }
-        <div class='productColors'>
+        {/* create a separate component for colors */}
+        <div class='productColors'> 
           {colors.map((color) => {        
             return (<span className={color.colorClass} key={color.id}><button style={color.style}></button></span>)
           })}
