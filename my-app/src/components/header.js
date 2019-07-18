@@ -22,7 +22,7 @@ function header() {
             </li>
         </ul>
       </div>
-      <div className='primaryNav'>
+      <div className='shoppingNav'>
           <ul>
               <li>Women</li>
               <li>Men</li>
