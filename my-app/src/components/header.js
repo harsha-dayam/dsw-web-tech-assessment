@@ -4,7 +4,7 @@ function header() {
   return (
     <div className='header'>
       <div className='mainNav'>
-      <ul className='mobileSecondaryNav'>
+        <ul className='mobileSecondaryNav'>
             <li className='shop'>
                 <img className='storeImage' src={require(`../images/store.gif`)} alt='shop hamburger icon'/>
             </li>
