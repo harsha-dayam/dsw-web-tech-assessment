@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto'),
+       url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Bold'),
+       url('./fonts/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Italic'),
+       url('./fonts/Roboto-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Bold-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Bold-Italic'),
+       url('./fonts/Roboto-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Johnston-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Johnston-Regular'),
+       url('./fonts/P22JohnstonUndergroundRegularA.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Johnston-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Johnston-Bold'),
+       url('./fonts/P22JohnstonUndergroundBoldA.woff') format('woff');
+}
+
+body {
+  font-family: 'Roboto';
+  letter-spacing: 0.8px;
+}
+
+p {
+  padding-bottom: 5px;
+  margin: 0;
+}
