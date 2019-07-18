@@ -1,0 +1,41 @@
+.header {
+    .mainNav {
+        display: flex;
+        justify-content: space-between;
+
+        .brandLogoContainer {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 10px;
+
+            .brandLogo {
+                width: 130px;
+                height: 50px;
+            }
+        }
+
+        .secondaryNav {
+            display: inline-block;
+            vertical-align: top;
+
+            li {
+                display: inline-block;
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                }                
+            }
+        }
+    }
+    .primaryNav {
+        ul {
+            color: gray;
+
+            li {
+                margin-left: 10px;
+                display: inline-block;
+            }
+        }
+    }
+}
