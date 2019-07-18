@@ -1,0 +1,10 @@
+.businessContent {
+    padding: 30px 20%;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto-Thin';
+
+    @include mobile {    
+        padding: 30px 10px;
+    }
+}
